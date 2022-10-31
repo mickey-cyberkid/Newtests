@@ -16,9 +16,9 @@ def scrap(page_content):
     with open("wordlist.txt",'a') as words:
         for row in Data_set:
             Data_ = row.findAll("td")
-            Index = Heads[0].text.strip()
-            French = Heads[1].text.strip()
-            English = Heads[2].text.strip()
+            Index = Data_[0].text.strip()
+            French = Data_[1].text.strip()
+            English = Data_[2].text.strip()
             words.write("{0} \t {1} \t {2}".format(Index,French, English))
         words.close()
 

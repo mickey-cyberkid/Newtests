@@ -19,7 +19,7 @@ def scrap(page_content):
             Index = Data_[0].text.strip()
             French = Data_[1].text.strip()
             English = Data_[2].text.strip()
-            words.write("{0} \t {1} \t {2}".format(Index,French, English))
+            words.write("{0} \t {1} \t {2}\n".format(Index,French, English))
         words.close()
 
 fetch()

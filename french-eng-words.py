@@ -17,7 +17,7 @@ def scrap(page_content):
         for row in Data_set:
             Data_ = tbody.findAll("td")
             Index = Heads[0].text.strip()
-            French = Heads[1].text strip()
+            French = Heads[1].text.strip()
             English = Heads[2].text.strip()
             words.write("{0} \t {1} \t {2}".format(Index,French, English))
         words.close()

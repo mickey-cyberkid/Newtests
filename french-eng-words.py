@@ -2,7 +2,7 @@ import requests
 from bs4 import BeautifulSoup as Craft
 
 def fetch():
-    url = ""
+    url = "https://strommeninc.com/1000-most-common-french-words-frequency-vocabulary/"
     Page = requests.get(url)
     page_content = Page.content
     scrap(page_content)
@@ -21,3 +21,4 @@ def scrap(page_content):
             English = Heads[2].text.strip()
             words.write("{0} \t {1} \t {2}".format(Index,French, English))
         words.close()
+

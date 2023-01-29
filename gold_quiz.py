@@ -1,3 +1,7 @@
+#!/bin/python
+# Author : Mickey Cyberkid 
+###########################
+
 import math
 
 gold_set = []
